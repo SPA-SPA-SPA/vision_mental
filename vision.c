@@ -16,14 +16,13 @@ int main(int argc, char const *argv[])
 
     printf("扩大视野心算训练开始！\n");
     start = clock();
-    
-    for( stage = 0; stage < 10; stage++)
+    for(stage = 0; stage < 10; stage++)
     {
         a = 10 + rand() % 90;           // 生成10~99的随机数
         b = 10 + rand() % 90;
         c = 10 + rand() % 90;
         n = rand() % 17;                // 生成0~16的随机数
-        printf("%d*s + %*s%d%*s + %*s%d: ", a, n, " ", n, " ", b, n, " ", n, " ", c);
+        printf("%d%*s + %*s%d%*s + %*s%d: ", a, n, " ", n, " ", b, n, " ", n, " ", c);
         
         do
         {
